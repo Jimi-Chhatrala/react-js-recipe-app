@@ -14,7 +14,7 @@ export default function Details() {
   useEffect(() => {
     async function getRecipeDetails() {
       const response = await fetch(
-        `http://forkify-api.herokuapp.com/api/v2/recipes/${id}`
+        `https://forkify-api.herokuapp.com/api/v2/recipes/${id}`
       );
       const data = await response.json();
       console.log(data);

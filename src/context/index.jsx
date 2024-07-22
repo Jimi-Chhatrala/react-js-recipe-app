@@ -16,7 +16,7 @@ export default function GlobalState({ children }) {
     event.preventDefault();
     try {
       const response = await fetch(
-        `http://forkify-api.herokuapp.com/api/v2/recipes?search=${searchParam}`
+        `https://forkify-api.herokuapp.com/api/v2/recipes?search=${searchParam}`
       );
 
       const data = await response.json();
