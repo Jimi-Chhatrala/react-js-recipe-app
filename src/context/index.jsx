@@ -25,7 +25,7 @@ export default function GlobalState({ children }) {
         setRecipeList(data?.data?.recipes);
         setLoading(false);
         setSearchParam("");
-        navigate("/");
+        navigate("react-js-recipe-app/");
       }
       console.log(data);
     } catch (error) {
